@@ -1,14 +1,5 @@
-#### tinypng简介
-**TinyPNG uses smart lossy compression techniques to reduce the file size of your PNG files. By selectively decreasing the number of colors in the image, fewer bytes are required to store the data. The effect is nearly invisible but it makes a very large difference in file size!**
-
-* 有损压缩
-
-#### 为什么使用tinypng
-
-在实验过程中，tinypng的压缩效果是最好的并且在视觉效果上没有影响，所以在最后选择压缩的工具中，就选择了此工具
-
-
 #### 使用此脚本
+
 **使用此脚本只需安装几个库就OK了**
 
 * 安装python，MAC端的朋友系统自带python就无需安装
@@ -20,3 +11,15 @@
 * 安装<code>Image库</code>,**pip install Image**，依赖PIL库
 
 **安装以上库之后，直接下载此脚本，使用python运行就OK了**
+
+* 在运行后，输入需要压缩的路径，可以是整个项目路径，无需做特殊处理，此脚本会遍历自己处理，找出png和jpg图片，然后进行压缩
+
+
+#### 需知
+* 此脚本会检测被压缩过的图片，2种方式检测
+  * 通过位深度，如果位深度为8位，则此图片就无需再被压缩
+  * 通过压缩率，压缩率小于50%则无需被压缩
+**此脚本在运行中可能出现错误，这个错误是上传图片过快导致的，重启脚本就OK了，重启后依然会从头遍历**
+
+#### 后续优化
+* 增量压缩，减少压缩时间
