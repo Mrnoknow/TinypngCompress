@@ -40,7 +40,7 @@ def compressImage(imageSrc):
         outputSize = resJson["output"]["size"]
         print '压缩图片路径：',
 
-        if((inputSize - outputSize)*100/inputSize > 40):
+        if((inputSize - outputSize)*100/inputSize > 50):
             print(imageSrc)
             print "压缩率：",
             print((inputSize - outputSize)*100/inputSize)
