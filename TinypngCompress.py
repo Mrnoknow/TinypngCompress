@@ -81,6 +81,7 @@ def getImage(imageDir):
 
 dirRoot = raw_input("please input compresses paths:")
 if os.path.exists(dirRoot):
+    print "扫描中..........."
     getImage(dirRoot)
 
 print '一共压缩:',
