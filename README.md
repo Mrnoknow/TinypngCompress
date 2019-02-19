@@ -4,10 +4,10 @@
 
 * 安装python，MAC端的朋友系统自带python就无需安装
 * 若没有安装pip，运行**sudo easy_install pip**
+* 安装<code>fake_useragent</code>,**pip install fake_useragent**,useragent操作相关
 * 安装<code>UserAgent库</code>,**pip install UserAgent**,设置动态UserAgent
 * 安装<code>requests库</code>,**pip install requests**，网络处理，post图片到tinypng后台，获取respond信息
-* 安装<code>imghdr库</code>,**pip install imghdr**，获取图片类型
-* 安装<code>PIL库</code>,**pip install PIL**，获取图片位深度
+* 安装<code>PIL库</code>,**sudo pip install Pillow**，图片操作相关
 * 安装<code>Image库</code>,**pip install Image**，依赖PIL库
 
    **安装以上库之后，直接下载此脚本，使用python运行就OK了**
