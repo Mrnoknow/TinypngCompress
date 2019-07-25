@@ -9,7 +9,7 @@
 * 安装<code>requests库</code>,**pip install requests**，网络处理，post图片到tinypng后台，获取respond信息
 * 安装<code>PIL库</code>,**sudo pip install Pillow**，图片操作相关
 * 安装<code>Image库</code>,**pip install Image**，依赖PIL库
-* brew install webp png转webp
+* **brew install webp**, png转webp
 
    **安装以上库之后，直接下载此脚本，使用python运行就OK了**
 
